@@ -1,0 +1,81 @@
+$title-font : 'Quicksand', sans-serif;
+$text-font : 'Roboto',sans-serif;
+$text-color : white;
+$new-color :#C6581D;
+// overriding bootatrap
+:root{
+  --bs-emphasis-color: $text-color;
+  --bs-navbar-active-color : $text-color;
+  --bs-navbar-toggler-border-color : $text-color;
+  --primary : $new-color;
+}
+
+body{
+  box-sizing: border-box;
+  background-image: url('../assets/images/sunset_group.jpg');
+  height: 100vh;
+  background-size: cover;
+}
+
+// ne pas oublier la mise en page du logo en petit écran
+
+.navbar{
+  height: 10vh;
+  .container-fluid{
+    height: 100%;
+    .title{
+      height: 100%;
+      h1{
+        font-size: 2rem;
+        color: $text-color;
+        margin: 0;
+      }
+      h2{
+        font-size: 1.5rem;
+        color: $text-color;
+        font-family: $text-font;
+      }
+    }
+    #logo{
+      height: 100%;
+    }
+   
+  }
+}
+main{
+  height: 80vh;
+  .container{
+    .row{
+      justify-content: center;
+      .big-logo{
+        opacity: 0.25;
+        max-width: 75%;
+      }
+      .title-main-page{
+        color: $text-color;
+      }
+      color: $text-color;
+      button{
+        background-color: $new-color;
+        border: none;
+        color: $text-color;
+        font-weight: bold;
+  
+        &:hover{
+          background:$text-color;
+          color : $new-color;
+          border-color: $new-color;
+        }
+      }
+    }
+    
+    
+  }
+}
+footer{
+  height: 5vh;
+  border: none;
+  span{
+    color: $text-color;
+  }
+}
